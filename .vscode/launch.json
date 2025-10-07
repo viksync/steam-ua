@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Node.js",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/apps/server/src/main.ts",
+            "runtimeExecutable": "npx",
+            "runtimeArgs": ["tsx"],
+            "console": "integratedTerminal",
+            "skipFiles": ["<node_internals>/**"],
+            "cwd": "${workspaceFolder}/apps/server"
+        }
+    ]
+}

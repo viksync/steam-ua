@@ -1,0 +1,31 @@
+{
+    "type": "module",
+    "private": true,
+    "workspaces": [
+        "apps/*",
+        "packages/*"
+    ],
+    "scripts": {
+        "dev": "NODE_ENV=dev concurrently \"npm run dev:server\" \"npm run dev:client\"",
+        "dev:client": "npm run dev --workspace=apps/client",
+        "dev:server": "NODE_ENV=dev npm run dev --workspace=apps/server",
+        "build": "npm run build --workspaces",
+        "build:client": "npm run build --workspace=apps/client",
+        "build:server": "npm run build --workspace=apps/server",
+        "test": "npm run test --workspaces",
+        "clean": "npm run clean --workspaces"
+    },
+    "devDependencies": {
+        "@eslint/js": "9.35.0",
+        "@types/node": "24.5.2",
+        "concurrently": "9.2.1",
+        "eslint": "9.35.0",
+        "eslint-config-prettier": "10.1.8",
+        "globals": "16.3.0",
+        "prettier": "3.6.2",
+        "prettier-plugin-tailwindcss": "0.6.14",
+        "typescript": "5.9.2",
+        "typescript-eslint": "8.42.0",
+        "vitest": "3.2.4"
+    }
+}

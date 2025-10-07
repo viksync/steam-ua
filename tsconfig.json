@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "noUncheckedIndexedAccess": true,
+        "allowUnreachableCode": false,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "target": "ES2022",
+        "lib": ["ES2023"],
+        "module": "ESNext",
+        "moduleResolution": "bundler",
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "removeComments": false,
+        "noEmitOnError": true,
+        "verbatimModuleSyntax": true,
+        "baseUrl": ".",
+        "paths": {
+            "@shared/*": ["packages/shared/src/*"]
+        }
+    },
+    "exclude": ["node_modules", "**/node_modules", "**/dist", "**/build"]
+}

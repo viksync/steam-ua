@@ -1,0 +1,27 @@
+const config = {
+    plugins: ['prettier-plugin-tailwindcss'],
+    tailwindStylesheet: './apps/client/src/styles/index.css',
+    printWidth: 80,
+    tabWidth: 4,
+    useTabs: false,
+    singleQuote: true,
+    bracketSpacing: true,
+    trailingComma: 'all',
+    semi: true,
+    arrowParens: 'always',
+    endOfLine: 'lf',
+    quoteProps: 'as-needed',
+    objectWrap: 'preserve',
+    experimentalTernaries: true,
+    experimentalOperatorPosition: 'start',
+    bracketSameLine: false,
+    singleAttributePerLine: false,
+    embeddedLanguageFormatting: 'auto',
+    requirePragma: false,
+    insertPragma: false,
+    checkIgnorePragma: true,
+    proseWrap: 'preserve',
+    jsxSingleQuote: true,
+};
+
+export default config;
